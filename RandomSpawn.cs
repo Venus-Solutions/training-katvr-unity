@@ -20,7 +20,7 @@ public class RandomSpawn : MonoBehaviour
         // if(Input.GetMouseButtonDown(1)){
         //     randomIndex = Random.Range(0, prefabItem.Length);
         //     randomSpawnPosition = new Vector3(Random.Range(-8, 8), 0.7f, Random.Range(-8, 8));
-        //     Instantiate(prefabItem[randomIndex], randomSpawnPosition, new Quaternion(45, 0, 45, 1));
+        //     Instantiate(prefabItem[randomIndex], randomSpawnPosition, Quaternion.identity);
         // }
 
         if(timer < 10f){
@@ -30,7 +30,7 @@ public class RandomSpawn : MonoBehaviour
         if(timer >= 10f){
             randomIndex = Random.Range(0, prefabItem.Length);
             randomSpawnPosition = new Vector3(Random.Range(-8, 8), 0.7f, Random.Range(-8, 8));
-            Instantiate(prefabItem[randomIndex], randomSpawnPosition, new Quaternion(45, 0, 45, 1));
+            Instantiate(prefabItem[randomIndex], randomSpawnPosition, Quaternion.identity);
             timer = 0f;
         }
     }
