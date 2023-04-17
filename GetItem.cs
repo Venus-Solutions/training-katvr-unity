@@ -18,7 +18,6 @@ public class GetItem : MonoBehaviour
     void Update()
     {
         transform.Rotate(Time.deltaTime * speed, Time.deltaTime * speed, 0);
-        // transform.Translate(0, 0, Time.deltaTime * 1);
     }
 
     private void OnCollisionEnter(Collision other) {
@@ -37,5 +36,3 @@ public class GetItem : MonoBehaviour
         }
     }
 }
-
-// materialID = playerController.materialID;  // เอาค่า PlayerController.materialID มาโชว์ใน Inspector
